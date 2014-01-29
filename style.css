@@ -8,7 +8,7 @@ body {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	/* font-size: 16px; */
 	font-size: 100%;
-	
+
 }
 section, header, nav, aside {
 	display: block;
@@ -45,7 +45,7 @@ section, header, nav, aside {
 	background-color: #DA622E;
 	list-style: none;
 }
-#menu ul h2 {
+#menu ul li h2 {
 	color: white;
 	padding: 10px 20px;
 	border: 0;
@@ -73,9 +73,6 @@ section, header, nav, aside {
     -o-transform: translate(0.5em,0);
     -ms-transform: translate(0.5em,0);
     transform: translate(0.5em,0);
-}
-#menu-first {
-	border-top: 1px solid #216B9A;
 }
 #menu li h2 {
 	color: white;
