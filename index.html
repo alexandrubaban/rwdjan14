@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Homepage</title>
-<meta charset="utf-8">
-<link href="style.css" rel="stylesheet" />
+  <title>Homepage</title>
+  <meta charset="utf-8">
+  <link href="style.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+      <script src="html5shiv.js"></script>
+    <![endif]-->
+
 </head>
 <body>
 
@@ -12,21 +16,15 @@
   <header id="banner">
     <h1>Canal View B &amp; B</h1>
   </header>
-  
-  <aside id="aside"> 
-    <h2>Reviews</h2>
-    <p>Thank you very much for a lovely stay - a great room a friendly host, and a great breakfast. Wish we could stay here for longer than just one day! Thank you, Paul Lawson</p>
-  </aside>
-  
-  <nav>    
-    <ul id="menu">
-      <li><h2>MENU</h2></li>
-      <li>&nbsp;</li>
-      <li><a href="index.html">Home</a></li>
+    
+  <nav id="menu" role="navigation">    
+    <ul>
+      <h2>MENU</h2>
+      <li id="menu-first"><a href="index.html">Home</a></li>
       <li><a href="rooms.html">Rooms</a></li>
       <li><a href="prices.html">Prices</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li><a href="http://en.turismovenezia.it/" target="_blank">Turismo Venezia</a></li>
+      <li><a href="http://en.turismovenezia.it/">Turismo Venezia</a></li>
     </ul>
   </nav>
   
@@ -36,6 +34,18 @@
     <p>The neighbourhood is very beautiful and characteristic, the house is just a footstep away from the most important monuments, churches and shops, with restaurants, pizzerias and bars around the corner.</p>
     <p>Take a look at our <a href="rooms.html">comfortable and elegant rooms</a>. Each bedroom has a seating area and balcony overlooking the canal.</p>
   </section>
+
+  <aside id="reviews"> 
+    <h2>Reviews</h2>
+    <p>Thank you very much for a lovely stay - a great room a friendly host, and a great breakfast. Wish we could stay here for longer than just one day! Thank you, Paul Lawson</p>
+  </aside>
+
+  <aside id="promo-container">
+    <div id="promo">
+      <h2>Get 10% off your next subscription to any W3C training course</h2>
+      <p>Provide the promotion code "W3C_Rules" during your next subscription</p>
+    </div>
+  </aside>
 
 </div>
 

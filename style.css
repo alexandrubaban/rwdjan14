@@ -1,10 +1,17 @@
 body {
 	margin: 0;
+	padding: 0;
 	background-image: url(background.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-color: #4B79AE;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	font-size: 16px;
+	/* font-size: 16px; */
+	font-size: 100%;
+	
+}
+section, header, nav, aside {
+	display: block;
 }
 #wrapper {
 	width: 998px;
@@ -14,7 +21,7 @@ body {
 #banner {
 	width: 100%;
 	height: 100px;
-	font-size: 50px;
+	font-size: 312%;
 	text-transform: uppercase;
 	text-align: center;
 	color: #FFF;
@@ -23,46 +30,62 @@ body {
 	width: 550px;
 	min-height: 280px;
 	padding: 20px 20px 30px 20px;
-	position: absolute;
-	top: 150px;
-	left: 260px;
+	position: relative;
+	float: left;
+	margin-top: 50px;
+	margin-left: 17px;
 	background-color: #FFF;
 }
-ul#menu {
+#menu ul {
 	width: 200px;
 	padding: 0;
+	float: left;
 	margin-top: 50px;
 	border: 1px solid #000;
 	background-color: #DA622E;
+	list-style: none;
+}
+#menu ul h2 {
+	color: white;
+	padding: 10px 20px;
+	border: 0;
+	border-bottom: 1px solid #216B9A;
+	margin-bottom: 40px;
 }
 #menu li {
-	text-align: center;
-	color: #fff;
-	padding: 10px 0 10px 20px;
 	border-bottom: 1px solid #216B9A;
 }
-#menu li {
+#menu a {
+	display: block;
+	color: #fff;
+	padding: 10px 0 10px 20px;	
 	text-align: left;
-	list-style: none;
+	-webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+	
+}
+#menu a:hover {
+	color: black;
+	-webkit-transform: translate(0.5em,0);
+    -moz-transform: translate(0.5em,0);
+    -o-transform: translate(0.5em,0);
+    -ms-transform: translate(0.5em,0);
+    transform: translate(0.5em,0);
+}
+#menu-first {
+	border-top: 1px solid #216B9A;
 }
 #menu li h2 {
 	color: white;
 	margin: 0;
 }
-li a {
-	color: #FFF;
-}
-li a:hover, li a:hover {
-	color: #000;
-}
 a {
 	text-decoration: none;
 	color: #DA622E;
 }
-a:hover, a:focus {
-	color: #09F;
-}
-#aside {
+#reviews {
 	width: 150px;
 	min-height: 200px;
 	float: right;
@@ -70,13 +93,30 @@ a:hover, a:focus {
 	background-color: #999;	
 	padding: 20px 10px;
 }
-#aside p {
-	font-size: 90%;
+#reviews p {
+	font-size: 80%;
 	color: white;
 }
-#aside h2 {
+#reviews h2 {
 	font-size: 110%;
 	margin-bottom: 16px;
+}
+#promo-container {
+	width: 100%;	
+	float: left;
+	margin-top: 50px;
+}
+#promo {
+	width: 75%;
+	background-color: #999;
+	text-align: center;
+	color: #FFF;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px 0;
+}
+#promo p {
+	margin: 0;
 }
 h1 {
 	margin-top: 0;
@@ -86,17 +126,22 @@ h2 {
 	color: #166BA1;
 	margin-top: 0;
 }
+#promo h2 {
+	color: white;
+	font-size: 120%;
+	margin: 0;
+}
 
-#prices-table {
+#table-prices {
 	width: 450px;
 	border: 0;
 }
 
-#prices-table td {
+#table-prices td {
 	background-color: #EEEEEE;
 	padding-left: 10px;
 }
 
-.prices-table-room-name {
+.table-prices-column-first {
 	font-weight: bold;
 }
