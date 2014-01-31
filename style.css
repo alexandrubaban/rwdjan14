@@ -139,3 +139,33 @@ h2 {
 .table-prices-column-first {
 	font-weight: bold;
 }
+
+.field {	
+	width: 100%;
+	margin: 10px 0;
+}
+
+label {
+	clear: both;
+	display: block;
+	float: left;
+	width: 125px;
+}
+
+.date-part {
+	
+	float: left;
+	display: block;
+	width: auto;
+	margin-right: 10px;
+
+}
+
+.date-part-label {
+	display: block;
+	
+	float: right;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
