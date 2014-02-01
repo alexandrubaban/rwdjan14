@@ -42,13 +42,6 @@ body {
 	background-color: #DA622E;
 	list-style: none;
 }
-#menu ul li h2 {
-	color: white;
-	padding: 10px 20px;
-	border: 0;
-	border-bottom: 1px solid #216B9A;
-	margin-bottom: 40px;
-}
 #menu li {
 	border-bottom: 1px solid #216B9A;
 }
@@ -70,10 +63,6 @@ body {
     -o-transform: translate(0.5em,0);
     -ms-transform: translate(0.5em,0);
     transform: translate(0.5em,0);
-}
-#menu li h2 {
-	color: white;
-	margin: 0;
 }
 a {
 	text-decoration: none;
@@ -140,9 +129,10 @@ h2 {
 	font-weight: bold;
 }
 
-.field {	
-	width: 100%;
-	margin: 10px 0;
+
+
+fieldset {
+	border: 0;
 }
 
 label {
@@ -152,20 +142,23 @@ label {
 	width: 125px;
 }
 
-.date-part {
-	
+.date-part {	
 	float: left;
 	display: block;
 	width: auto;
 	margin-right: 10px;
-
 }
 
 .date-part-label {
 	display: block;
-	
-	float: right;
+	float: left;
 	width: 100%;
 	margin: 0;
 	padding: 0;
+}
+
+.field {	
+	width: 100%;
+	margin-bottom: 20px;
+	display: block;
 }
