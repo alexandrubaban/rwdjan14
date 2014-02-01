@@ -3,31 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <title>Contact | Canal View B &amp; B</title>  
-  <link href="style.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" />
+  <script src="js/scripts.js"></script>
 </head>
 <body>
 <div id="wrapper">
   
-  <div id="banner">
+  <div id="header">
     <header role="banner">    
       <h1>Canal View B &amp; B</h1>    
     </header>
   </div>
     
-  <div id="menu">
+  <div id="nav">
     <nav role="navigation">        
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="rooms.html">Rooms</a></li>
         <li><a href="prices.html">Prices</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="http://en.turismovenezia.it/">Turismo Venezia</a></li>
       </ul>    
     </nav>
   </div>
   
-  <div id="content">
-    <section role="main"> 
+  <div id="main">
+    <main role="main"> 
     <h2>CONTACT US</h2>
     <form action="confirmation.html">
       
@@ -35,12 +35,12 @@
 
       <div class="field">
         <label for="Name">Name:</label>
-        <input type="text" name="Name" id="Name" size="30" />
+        <input type="text" name="Name" id="Name" size="30" required />
       </div>
 
       <div class="field">
         <label for="Email">E-mail:</label>
-        <input type="text" name="Email" id="Email" size="30" />
+        <input type="email" name="Email" id="Email" size="30" required />
       </div>
 
       <div class="field">
@@ -273,13 +273,15 @@
         </tr>
       </table> -->
     </form>
-    </section>
+    </main>
   </div>
 
-  <div id="reviews">
-    <aside role="complementary"> 
+  <div id="aside">
+    <aside role="complementary">
       <h2>Reviews</h2>
-      <p>I just wanted to let you know what a wonderful time we had at your B and B. I have visited Venice many times, but yours is a wonderful place to stay, its my new favorite and I will be sure to recommend it to my fellow professors travelling in Venice.Venice may not have oysters, but your place is a pearl. Brad Clarke</p>
+      <p>Thank you very much for a lovely stay - a great room a friendly host, and a great breakfast. Wish we could stay here for longer than just one day! Thank you, Paul Lawson</p>    
+      <h3>Explore</h3>
+      <a href="http://en.turismovenezia.it/">Turismo Venezia</a>
     </aside>
   </div>
 

@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-image: url(background.jpg);
+	background-image: url(../img/background.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-color: #4B79AE;
@@ -15,7 +15,7 @@ body {
 	padding: 0 20px 20px 20px;
 	margin: 0 auto auto 20px;
 }
-#banner {
+#header {
 	width: 100%;
 	height: 100px;
 	font-size: 312%;
@@ -23,7 +23,7 @@ body {
 	text-align: center;
 	color: #FFF;
 }
-#content {
+#main {
 	width: 550px;
 	min-height: 280px;
 	padding: 20px 20px 30px 20px;
@@ -33,7 +33,7 @@ body {
 	margin-left: 17px;
 	background-color: #FFF;
 }
-#menu ul {
+#nav ul {
 	width: 200px;
 	padding: 0;
 	float: left;
@@ -42,10 +42,10 @@ body {
 	background-color: #DA622E;
 	list-style: none;
 }
-#menu li {
+#nav li {
 	border-bottom: 1px solid #216B9A;
 }
-#menu a {
+#nav a {
 	display: block;
 	color: #fff;
 	padding: 10px 0 10px 20px;	
@@ -56,7 +56,7 @@ body {
     transition: 0.5s ease-in-out;
 	
 }
-#menu a:hover {
+#nav a:hover {
 	color: black;
 	-webkit-transform: translate(0.5em,0);
     -moz-transform: translate(0.5em,0);
@@ -68,19 +68,18 @@ a {
 	text-decoration: none;
 	color: #DA622E;
 }
-#reviews {
+#aside {
 	width: 150px;
 	min-height: 200px;
 	float: right;
 	margin: 50px 0 0 10px;
-	background-color: #999;	
+	background-color: white;	
 	padding: 20px 10px;
 }
-#reviews p {
+#aside p {
 	font-size: 80%;
-	color: white;
 }
-#reviews h2 {
+#aside h2 {
 	font-size: 110%;
 	margin-bottom: 16px;
 }
@@ -104,10 +103,13 @@ a {
 h1 {
 	margin-top: 0;
 }
-h2 {
+h2, h3 {
 	font-size: 100%;
 	color: #166BA1;
-	margin-top: 0;
+	margin: 0;
+}
+h3 {
+	margin: 25px 0 10px;
 }
 #promo h2 {
 	color: white;
@@ -117,12 +119,17 @@ h2 {
 
 #table-prices {
 	width: 450px;
-	border: 0;
+	margin: 20px 0;
+	border: 1px solid #eee;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
 }
 
 #table-prices td {
-	background-color: #EEEEEE;
-	padding-left: 10px;
+	background-color: #eee;
+	padding: 10px;
 }
 
 .table-prices-column-first {
