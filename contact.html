@@ -29,249 +29,109 @@
   <div id="main">
     <main role="main"> 
     <h2>CONTACT US</h2>
-    <form action="confirmation.html">
+
+    <form id="contact-form" action="confirmation.html">
       
       <fieldset>
 
-      <div class="field">
-        <label for="Name">Name:</label>
-        <input type="text" name="Name" id="Name" size="30" required />
-      </div>
+        <div class="field">
+          <label for="Name">Name:</label>
+          <input type="text" name="Name" id="Name" size="30" required />
+        </div>
 
-      <div class="field">
-        <label for="Email">E-mail:</label>
-        <input type="email" name="Email" id="Email" size="30" required />
-      </div>
+        <div class="field">
+          <label for="Email">E-mail:</label>
+          <input type="email" name="Email" id="Email" size="30" required />
+        </div>
 
-      <div class="field">
-        
-        <label>Arrival Date:</label>
-        
-                
+        <div class="field">
           
-          <div class="date-part">
-            <label for="ArrivalDateMonth" class="date-part-label">Month</label>
-            <select id="ArrivalDateMonth" name="ArrivalDateMonth">
-              <option value="">&nbsp;</option>
-              <option value="01">January</option>
-              <option value="02">February</option>
-              <option value="03">March</option>
-              <option value="04">April</option>
-              <option value="05">May</option>
-              <option value="06">June</option>
-              <option value="07">July</option>
-              <option value="08">August</option>
-              <option value="09">September</option>
-              <option value="10">October</option>
-              <option value="11">November</option>
-              <option value="12">December</option>
-            </select>
-          </div>
+          <label>Arrival Date:</label>                
             
-          <div class="date-part">
-            <label for="ArrivalDateDay" class="date-part-label">Day</label>
-            <input type="text" maxlength="2" value="" name="ArrivalDateDay" id="ArrivalDateDay" size="4">
-          </div>
-
-          <div class="date-part">
-            <label for="ArrivalDateYear" class="date-part-label">Year</label>
-            <input type="text" maxlength="4" value="" name="ArrivalDateYear" id="ArrivalDateYear" size="8">
-          </div>
-
-       
-
-      </div>
-
-      <div class="field">
-        
-        <label>Arrival Date:</label>
-        
+            <div class="date-part">
+              <label for="ArrivalDateMonth" class="date-part-label">Month</label>
+              <select id="ArrivalDateMonth" name="ArrivalDateMonth" required>
+                <option value="">&nbsp;</option>
+                <option value="01">January</option>
+                <option value="02">February</option>
+                <option value="03">March</option>
+                <option value="04">April</option>
+                <option value="05">May</option>
+                <option value="06">June</option>
+                <option value="07">July</option>
+                <option value="08">August</option>
+                <option value="09">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+              </select>
+            </div>
               
+            <div class="date-part date-part-day">
+              <label for="ArrivalDateDay" class="date-part-label">Day</label>
+              <input type="text" maxlength="2" value="" name="ArrivalDateDay" id="ArrivalDateDay" size="4" required>
+            </div>
+
+            <div class="date-part">
+              <label for="ArrivalDateYear" class="date-part-label">Year</label>
+              <input type="text" maxlength="4" value="" name="ArrivalDateYear" id="ArrivalDateYear" size="8" required>
+            </div>
+
+            <div class="separator"></div>      
+
+        </div>
+
+        <div class="field">
           
-          <div class="date-part">
-            <label for="ArrivalDateMonth" class="date-part-label">Month</label>
-            <select id="ArrivalDateMonth" name="ArrivalDateMonth">
-              <option value="">&nbsp;</option>
-              <option value="01">January</option>
-              <option value="02">February</option>
-              <option value="03">March</option>
-              <option value="04">April</option>
-              <option value="05">May</option>
-              <option value="06">June</option>
-              <option value="07">July</option>
-              <option value="08">August</option>
-              <option value="09">September</option>
-              <option value="10">October</option>
-              <option value="11">November</option>
-              <option value="12">December</option>
-            </select>
-          </div>
+          <label>Departure Date:</label>              
             
-          <div class="date-part">
-            <label for="ArrivalDateDay" class="date-part-label">Day</label>
-            <input type="text" maxlength="2" value="" name="ArrivalDateDay" id="ArrivalDateDay" size="4">
-          </div>
+            <div class="date-part">
+              <label for="DepartureDateMonth" class="date-part-label">Month</label>
+              <select id="DepartureDateMonth" name="DepartureDateMonth" required>
+                <option value="">&nbsp;</option>
+                <option value="01">January</option>
+                <option value="02">February</option>
+                <option value="03">March</option>
+                <option value="04">April</option>
+                <option value="05">May</option>
+                <option value="06">June</option>
+                <option value="07">July</option>
+                <option value="08">August</option>
+                <option value="09">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+              </select>
+            </div>
+              
+            <div class="date-part date-part-day">
+              <label for="DepartureDateDay" class="date-part-label">Day</label>
+              <input type="text" maxlength="2" value="" name="DepartureDateDay" id="DepartureDateDay" size="4" required>
+            </div>
 
-          <div class="date-part">
-            <label for="ArrivalDateYear" class="date-part-label">Year</label>
-            <input type="text" maxlength="4" value="" name="ArrivalDateYear" id="ArrivalDateYear" size="8">
-          </div>
+            <div class="date-part">
+              <label for="DepartureDateYear" class="date-part-label">Year</label>
+              <input type="text" maxlength="4" value="" name="DepartureDateYear" id="DepartureDateYear" size="8" required>
+            </div>
 
+            <div class="separator"></div> 
 
+        </div>
 
-      </div>
+        <div class="field">
+          <label>Message:</label>
+          <textarea id="contact-message" rows="5" cols="39">Type here</textarea>
+        </div>
 
-
-      <div class="field" style="margin-top: 20px;">
-        <label>Message:</label>
-        <textarea>Type here</textarea>
-      </div>
-
+        <div class="field">
+          <label>&nbsp;</label>
+          <input class="button" name="Submit" type="submit" value="Send">
+          <input class="button" name="Reset" type="reset" value="Cancel">
+        </div>
+      
       </fieldset>
 
-      <!-- <table>
-        <tr>
-          <td class="input-label">Name:</td>
-          <td><input type="text" size="30"></td>
-        </tr>
-        <tr>
-          <td class="input-label">E-mail:</td>
-          <td><input type="text" size="30"></td>
-        </tr>
-        <tr>
-          <td class="input-label">Arrival Date:</td>
-          <td>
-            <select>
-              <option selected="">Select Month</option>
-              <option>Jan</option>
-              <option>Feb</option>
-              <option>Mar</option>
-              <option>April</option>
-              <option>May</option>
-              <option>June</option>
-              <option>July</option>
-              <option>August</option>
-              <option>September</option>
-              <option>October</option>
-              <option>November</option>
-              <option>December</option>
-            </select>            
-            <select id="ar_day" size="1" name="ar_day">
-              <option selected="">Select Day</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-              <option>7</option>
-              <option>8</option>
-              <option>9</option>
-              <option>10</option>
-              <option>11</option>
-              <option>12</option>
-              <option>13</option>
-              <option>14</option>
-              <option>15</option>
-              <option>16</option>
-              <option>17</option>
-              <option>18</option>
-              <option>19</option>
-              <option>20</option>
-              <option>21</option>
-              <option>22</option>
-              <option>23</option>
-              <option>24</option>
-              <option>25</option>
-              <option>26</option>
-              <option>27</option>
-              <option>28</option>
-              <option>29</option>
-              <option>30</option>
-              <option>31</option>
-            </select>
-            <select>
-              <option selected="">Select year</option>
-              <option>2011</option>
-              <option>2012</option>
-              <option>2013</option>
-              <option>2014</option>
-              <option>2015</option>
-              <option>2016</option>
-              <option>2017</option>
-            </select></td>
-        </tr>
-        <tr>
-          <td class="input-label">Departure Date:</td>
-          <td><select>
-              <option selected="">Select Month</option>
-              <option>Jan</option>
-              <option>Feb</option>
-              <option>Mar</option>
-              <option>April</option>
-              <option>May</option>
-              <option>June</option>
-              <option>July</option>
-              <option>August</option>
-              <option>September</option>
-              <option>October</option>
-              <option>November</option>
-              <option>December</option>
-            </select>
-            <select id="ar_day" size="1" name="ar_day">
-              <option selected="">Select Day</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-              <option>7</option>
-              <option>8</option>
-              <option>9</option>
-              <option>10</option>
-              <option>11</option>
-              <option>12</option>
-              <option>13</option>
-              <option>14</option>
-              <option>15</option>
-              <option>16</option>
-              <option>17</option>
-              <option>18</option>
-              <option>19</option>
-              <option>20</option>
-              <option>21</option>
-              <option>22</option>
-              <option>23</option>
-              <option>24</option>
-              <option>25</option>
-              <option>26</option>
-              <option>27</option>
-              <option>28</option>
-              <option>29</option>
-              <option>30</option>
-              <option>31</option>
-            </select>
-            <select>
-              <option selected="">Select year</option>
-              <option>2011</option>
-              <option>2012</option>
-              <option>2013</option>
-              <option>2014</option>
-              <option>2015</option>
-              <option>2016</option>
-              <option>2017</option>
-            </select></td>
-        </tr>
-        <tr>
-          <td class="input-label">Message:</td>
-          <td><textarea>Type here</textarea></td>
-        </tr>
-        <tr>
-          <td><input name="Reset" type="reset" value="Cancel"></td>
-          <td><input type="Submit" value="Proceed" ></td>
-        </tr>
-      </table> -->
+      
     </form>
     </main>
   </div>
